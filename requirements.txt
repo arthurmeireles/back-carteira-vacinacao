@@ -158,7 +158,7 @@ pycups==1.9.73
 pydot==1.2.3
 pydot-ng==2.0.0
 Pygments==2.7.3
-pygobject==3.26.1
+pygobject==3.38.0
 PyHamcrest==2.0.2
 pyinotify==0.9.6
 PyJWT==1.7.1
