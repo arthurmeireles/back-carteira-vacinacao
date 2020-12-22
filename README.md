@@ -33,7 +33,7 @@ DATABASES = {
 1. Clonar o repositório com: `https://github.com/arthurmeireles/back-carteira-vacinacao.git`
 
 2. Instalar dependências com `pip install -r requirements.txt`
-3. Gerar as migrações com `python manage.py makemigrations ˋ
+3. Gerar as migrações com `python manage.py makemigrationsˋ
 4. Rodar as migrações com  `python manage.py migrateˋ
-5. Rodar o servidor com ` python manage.py runserverˋ
+5. Rodar o servidor com `python manage.py runserverˋ
 
