@@ -22,12 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'db3d7f004258d3cb8dbdc8d7cb962da78b1e3935f1f0c97b'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'db3d7f004258d3cb8dbdc8d7cb962da78b1e3935f1f0c97b')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG') == True
+DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -39,12 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api',
-        'django_filters',
-
+    'django_filters',
     'corsheaders',
     #libs
     'rest_framework',
-
     # Autenticacao
     'rest_framework.authtoken',
 ]
@@ -87,10 +85,10 @@ WSGI_APPLICATION = 'apiCarteiraVacinacao.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd8qdh9d7k9c1fo', 
-        'USER': 'rvoohpjdhwmhlp', 
-        'PASSWORD': '16c43b7548f49f1a93eec9a6a60da2b6979f45d6af06829427dbc44b68337bcb',
-        'HOST': 'ec2-50-19-247-157.compute-1.amazonaws.com', 
+        'NAME': 'carteiraVacinacao', 
+        'USER': 'postgres', 
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost', 
         'PORT': '5432',
     }
 }
@@ -120,21 +118,24 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Recife'
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfile')
 
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
