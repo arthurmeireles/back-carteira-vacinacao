@@ -37,10 +37,10 @@ cryptography==3.3.1
 cssselect2==0.3.0
 daphne==3.0.1
 decorator==4.4.2
-defer==1.0.6
+defer==1.0.4
 defusedxml==0.7.0rc1
 distro==1.5.5
-distro-info===0.10
+distro-info==0.10
 dj-database-url==0.5.0
 Django==3.1.4
 django-allauth==0.44.0
