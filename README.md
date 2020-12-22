@@ -14,7 +14,7 @@ sudo -u postgres psql -U postgres -c "CREATE DATABASE nomedobanco;"
 
 Ajuste nas settings o username e senha do seu database
 
-```sh
+```
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -25,6 +25,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+```
 
 
 ## Configuração do Ambiente
