@@ -22,11 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '627688e0850bbcf986807763a55181c852597148a7695b0d')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'e80216a6e8ed2a16e341a053cba481dbeb58737c26eda953')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG') == True
 
 ALLOWED_HOSTS = ['*']
 
@@ -146,5 +146,5 @@ REST_FRAMEWORK = {
 }
 CORS_ORIGIN_ALLOW_ALL = True
 
-ALLOWED_HOSTS = ['https://lais-api-carteira-vacinacao.herokuapp.com/']
+ALLOWED_HOSTS = ['https://lais-api-carteira-vacinacao.herokuapp.com']
 django_heroku.settings(locals())
