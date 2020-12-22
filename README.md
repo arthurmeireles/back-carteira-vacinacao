@@ -38,7 +38,7 @@ https://github.com/arthurmeireles/back-carteira-vacinacao.git
 ˋˋˋ
 pip install -r requirements.txt
 ˋˋˋ
-3. Gerar as migrações com ˋˋˋpython manage.py makemigrationsˋˋˋ
-4. Rodar as migrações com  ˋˋˋpython manage.py migrateˋˋˋ
-5. Rodar o servidor com ˋˋˋpython manage.py runserverˋˋˋ
+3. Gerar as migrações com ˋ```sh python manage.py makemigrations ˋˋˋ
+4. Rodar as migrações com  ```sh python manage.py migrateˋˋˋ
+5. Rodar o servidor com ```sh python manage.py runserverˋˋˋ
 
