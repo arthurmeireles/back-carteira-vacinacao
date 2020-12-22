@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'apiCarteiraVacinacao.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'carteiraVacinacao', 
-        'USER': 'postgres', 
-        'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1', 
+        'NAME': 'd8qdh9d7k9c1fo', 
+        'USER': 'rvoohpjdhwmhlp', 
+        'PASSWORD': '16c43b7548f49f1a93eec9a6a60da2b6979f45d6af06829427dbc44b68337bcb',
+        'HOST': 'ec2-50-19-247-157.compute-1.amazonaws.com', 
         'PORT': '5432',
     }
 }
