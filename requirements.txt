@@ -229,7 +229,6 @@ Twisted==20.3.0
 txaio==20.4.1
 typed-ast==1.4.1
 typing-extensions==3.7.4.3
-ubuntu-drivers-common==0.0.0
 ufw==0.36
 unattended-upgrades==0.1
 Unidecode==1.1.1
