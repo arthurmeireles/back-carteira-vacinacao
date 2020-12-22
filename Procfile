@@ -1,1 +1,1 @@
-web: gunicorn lais-api-carteira-vacinacao.api.wsgi
+web: gunicorn back-carteira-vacinacao.lais-api-carteira-vacinacao.wsgi
