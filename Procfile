@@ -1,0 +1,1 @@
+web: gunicorn api.lais-carteira-vacinacao.wsgi
