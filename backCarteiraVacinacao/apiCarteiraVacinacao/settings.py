@@ -144,5 +144,5 @@ REST_FRAMEWORK = {
 }
 CORS_ORIGIN_ALLOW_ALL = True
 
-ALLOWED_HOSTS = ['https://carteira-vacinacao-lais']
+ALLOWED_HOSTS = ['https://lais-api-carteira-vacinacao.herokuapp.com/']
 django_heroku.settings(locals())
